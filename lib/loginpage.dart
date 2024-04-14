@@ -77,11 +77,12 @@ class Loginpage extends StatelessWidget{
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Color.fromARGB(255, 121, 214, 160),
-                        )
+                        ),
+                        
                       )
                     ),
                     obscureText: true,
-                  ) // 비밀번호를 가리기 위함
+                  ) 
                 ),
               ),
             ],
