@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
-//import 'package:fluttercap/custom_appbar.dart';
-import 'package:fluttercap/homepage.dart';
-import 'package:fluttercap/loginpage.dart';
-
-import 'package:fluttercap/signuser.dart';
-import 'package:fluttercap/signuppage.dart';
-import 'package:fluttercap/signfamily.dart';
+import 'homepage.dart';
+import 'loginpage.dart';
+import 'signuser.dart';
 
 void main() {
-  runApp(familysign()); //앱 시작
+  runApp(MyApp()); //앱 시작
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,8 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage()    
+      home: HomePage(),
+      routes: {
+        '/login': (context) => LoginPage(),
+        '/signup': (context) => UserSign()
+      },
     );
-  
   }
 }

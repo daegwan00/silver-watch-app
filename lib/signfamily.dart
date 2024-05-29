@@ -97,6 +97,34 @@ class familysign extends StatelessWidget {
                       ),
                     ),
                   ),  
+
+                  SizedBox(height: 10,),
+                   Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 100.0), // 가로 여백 추가
+                    child: Text(
+                      '이메일',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(height: screenHeight * 0.01),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 100.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: '이메일을 입력하세요.',
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(8.0)
+                        ),
+                      ),
+                    ),
+                  ),
+
+                  
                   SizedBox(height: 10,),
                    Padding(
                     padding: EdgeInsets.symmetric(horizontal: 100.0), // 가로 여백 추가
